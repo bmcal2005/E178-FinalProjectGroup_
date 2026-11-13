@@ -10,7 +10,7 @@ Data health findings (see notebook, Section 2):
 - The fire label is not populated after Dec 2023 (2024–2025 are all `False`), so those years are excluded.
 - The fire-day rate trends upward over time, so we use a time-based split: train 1984–2015, test 2016–2023.
 
-## Performance metric
+//## Performance metric
 - **Primary:** PR-AUC (average precision) on 2016–2023, compared against a month-only baseline.
 - **Secondary:** ROC-AUC, plus recall, precision and a confusion matrix at a chosen threshold.
 
@@ -22,7 +22,7 @@ Data health findings (see notebook, Section 2):
 | Weather + month (logistic) | 0.810 | 0.849 |
 | Random forest, tuned with TimeSeriesSplit (weather + month) | 0.805 | 0.848 |
 
-At a threshold chosen on 2011–2015 validation for 80% recall, the random forest gets **82.7% recall and 70.5% precision** on the 2016–2023 test set (F2 = 0.80).
+At a threshold chosen on 2011–2015 validation for 80% recall, the random forest gets **82.7% recall and 70.5% precision** on the 2016–2023 test set (F2 = 0.80).//
 
 ## Running
 ```bash
